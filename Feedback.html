@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Health-Plus|Feedback </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">  
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+      </div>
+    </div>
+  </div>
+  
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="Home.html">HEALTH-PLUS <i class='fas fa-hospital-alt' style='font-size:30px'></i></a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link" href="Home.html">Home</a></li>
+          <li><a class="nav-link" href="Dosage.html">Medicine Dosage</a></li>
+          <li><a class="nav-link" href="Vitals.html">Health Vitals</a></li>
+          <li><a class="nav-link" href="Tips.html">Tips</a></li>
+          <li><a class="nav-link" href="Measures.html">Measures</a></li>       
+          <li><a class="nav-link active" href="Feedback.html">Feedback</a></li>
+          <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav> 
+
+      <a href="appointment.html" class="appointment-btn"> Appointment</a>
+
+
+      <div>
+        Welcome! <span id="Uname"></span>
+      </div>
+    </div>
+  </header> 
+
+
+  <section id="contact" class="contact">
+    <div class="container">
+<br><br>
+
+        <div class="col-lg-12 mt-5 mt-lg-0">
+          <form action="" role="form" class="p-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" minlength="3"  name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="text"  maxlength="4" minlength="4" class="form-control" name="id" id="id" placeholder="Patient Id"  required>
+               </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" maxlength="50" minlength="5" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" maxlength="500" minlength="20" name="message" rows="5" id="regards" placeholder="Complains $ Suggestions" required></textarea>
+            </div>
+            <div class="text-center"><button id="sub" input type="submit"  colspan="2"  onclick="validate()">Send Feedback</button></div>
+             
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section> 
+  <script>
+ function validate(){
+
+var fname = document.getElementById("name").value
+var id = document.getElementById("id").value
+var subject = document.getElementById("subject").value
+var reg = document.getElementById("regards").value
+
+if(  fname != "" && id != "" && subject != "" && reg != ""   ){
+    alert("Feedback has been send!");
+}
+else if(fname == ""){
+    alert("Your Name is required!");
+}
+else if(id == ""){
+    alert("id is required!");
+}
+else if(subject == ""){
+    alert("Gender is required!");
+}
+else if(reg == ""){
+    alert("Complains $ Suggestions!");
+}
+else{
+    alert("All fields are required!");
+}
+}
+      </script>
+
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Health-Plus</h3>
+              <p>
+                Aptech<br>
+                North Nazimabad<br><br>
+                <strong>Phone:</strong> +92 333 0320909<br>
+                <strong>Email:</strong> info@HealthPlus.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.skype.com/" class="google-plus"><i class="bx bxl-skype"></i></a>  
+                <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="appointment.html">Appointments</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Feedback.html">Feedback</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+               <li><i class="bx bx-chevron-right"></i> <a href="Dosage.html">Medicine Dosage</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Vitals.html">Health Vitals</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="appointment.html">Appointments</a></li>
+            </ul>
+          </div>
+ 
+
+        </div>
+      </div>
+    </div>
+
+    
+    </div>
+  </footer> 
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+   
+
+
+  
+  <script>
+    var names = localStorage.getItem("Uname");
+ document.getElementById('Uname').innerHTML = names;
+   </script>
+  
+  
+  <link href="assets/js/cdn/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/js/cdn/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/js/cdn/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <script src="assets/js/cdn/bootstrap/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/cdn/glightbox/assets/js/glightbox.min.js"></script>
+  <script src="assets/js/cdn/p-email-form/validate.js"></script>
+  <script src="assets/js/cdn/purecounter/purecounter.js"></script>
+  <script src="assets/js/cdn/swiper/swiper-bundle.min.js"></script>
+
+   
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

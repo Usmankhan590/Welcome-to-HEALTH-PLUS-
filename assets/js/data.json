@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "Sara",
+    "Age": "Under (18-40)",
+    "Contact_No": "+92 333 33333333",
+    "Email_ID": "John@gmail.com",
+    "Appointment_Date": "08/15/2022",
+    "Appointment_Time": "08:00 pm",
+    "Services": "OPD",
+
+    "Medication": ["Penadol","Arinac"],
+    "Dosage": ["2 Tab","1 Tab"],
+    "Date": "08/15/2022",
+    "ToDate": "08/17/2022",
+    "Timing": ["Morning", "Evening", "Night"],
+    "Remarks": "Follow the Doctor`s Instructions",
+
+    "Temperature": "97",
+    "Blood_Pressure": "120/80",
+    "Glucose": "150",
+    "Weight": "80",
+    "Heart_Rate": "3",
+
+    "Temperature_N": "97 F to 99 F",
+    "Blood_Pressure_N": "120/80",
+    "Glucose_N": "100 to 125 mg/dL",
+    "Heart_Rate_N": "30.5 - 4 mV (ECG)"
+  }
+  
+]

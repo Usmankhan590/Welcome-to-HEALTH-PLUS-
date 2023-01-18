@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Health-Plus</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">  
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="Home.html">HEALTH-PLUS <i class='fas fa-hospital-alt' style='font-size:30px'></i></a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link" href="Home.html">Home</a></li>
+          <li><a class="nav-link" href="Dosage.html">Medicine Dosage</a></li>
+          <li><a class="nav-link" href="Vitals.html">Health Vitals</a></li>
+          <li><a class="nav-link" href="Tips.html">Tips</a></li>
+          <li><a class="nav-link" href="Measures.html">Measures</a></li>       
+          <li><a class="nav-link" href="Feedback.html">Feedback</a></li>
+          <li><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav> 
+
+      <a href="appointment.html" class="appointment-btn"> Appointment</a>
+
+
+      <div>
+        Welcome! <span id="Uname"></span>
+      </div>
+    </div>
+  </header> 
+
+
+
+
+  
+  <section id="doctors" class="doctors">
+    <div class="container">
+
+      <div class="section-title">
+          <br><br>
+        <h2>Appointment Detail</h2>
+        
+      </div>
+
+      <div class="row">
+
+        <div class="container">          
+          <table class="table table-bordered">
+              <tbody id="id01" >
+  
+              </tbody>
+          </table>
+      </div>
+
+      </div>
+     
+    </div>
+  </section> 
+
+
+  <div class="container">
+  <div class="accordion" style="Margin-top:-6vh ;margin-bottom:20px;" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <center>
+        <button class="btn btn-primary" role="button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          
+             Make an Appointment
+          
+        </button>
+      </center>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <form accept="" role="form" class="p-email-form">
+            <div class="row">
+              <div class="col-md-4 form-group">
+                <input type="text" maxlength="8" minlength="4" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Must Contains Letters numbers and characters" required>
+               
+              </div>
+              <div class="col-md-4 form-group mt-3 mt-md-0">
+                <input type="text" maxlength="11" minlength="11" class="form-control" name="phone" id="phone" placeholder="Your Contact No" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 form-group mt-3">
+                <input type="date" maxlength="1-1-2026" minlength="15-08-2022" name="date" class="form-control datepicker" id="date" required>
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <select name="age" id="age" class="form-select" required>
+                  <option value="">Select Age</option>
+                  <option value="Department 1">Below 18</option>
+                  <option value="Department 2">Under (18-40)</option>
+                  <option value="Department 3">40 above</option>
+                </select>
+                
+              </div>
+              <div class="col-md-4 form-group mt-3">
+                <input type="time" name="time" class="form-control datepicker" id="time" required>
+              </div>
+              
+
+
+            </div>
+    
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Services (Optional)"></textarea>
+              
+            </div>
+            <div style="margin-top: 2vh;" class="text-center"><button class="btn btn-primary" input type="submit">Submit</button></div>
+           
+          </form>
+    
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Health-Plus</h3>
+              <p>
+                Aptech<br>
+                North Nazimabad<br><br>
+                <strong>Phone:</strong> +92 333 0320909<br>
+                <strong>Email:</strong> info@HealthPlus.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.skype.com/" class="google-plus"><i class="bx bxl-skype"></i></a>  
+                <a href="https://www.linkedin.com/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="Home.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="appointment.html">Appointments</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Feedback.html">Feedback</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+               <li><i class="bx bx-chevron-right"></i> <a href="Dosage.html">Medicine Dosage</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="Vitals.html">Health Vitals</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="appointment.html">Appointments</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Kindly enter your email to get in touch.. .</p>
+            <form action="" method="post">
+              <input type="email" name="email" required><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    </div>
+  </footer> 
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+     
+<script>
+
+var names = localStorage.getItem("Uname");
+ document.getElementById('Uname').innerHTML = names;
+
+
+  var xmlhttp = new XMLHttpRequest();
+  var url = "assets/js/data.json";
+  xmlhttp.onreadystatechange = function(){
+  
+  
+  if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+  
+  var myArr = JSON.parse(xmlhttp.responseText);
+  var design =" ";
+  
+  for(var key in myArr)
+  {
+      if(myArr.hasOwnProperty(key))
+  {      
+    design += "<tr><th><li>1</li></th><th>Name</th><td>"  +myArr[key].Name + "</td></tr>"+"<tr><th><li>2</li></th><th>Age</th><td>"  +myArr[key].Age + "</td></tr>"+"<tr><th><li>3</li></th><th>Contact</th><td>" + myArr[key].Contact_No+"</td></tr>"+"<tr><th><li>4</li></th><th>Email</th><td>" + myArr[key].Email_ID+"</td></tr>"+"<tr><th><li>5</li></th><th>Appointment Date</th><td>" + myArr[key].Appointment_Date+"</td></tr>"+"<tr><th><li>6</li></th><th>Appointment Time</th><td>" + myArr[key].Appointment_Time+"</td></tr>"+"<tr><th><li>7</li></th><th>Services</th><td>" + myArr[key].Services+"</td></tr>";
+   
+  
+  }
+  }
+  document.getElementById("id01").innerHTML += design;
+  
+  
+  }
+  };
+  
+  xmlhttp.open("GET",url,true);
+  xmlhttp.send();
+  </script>
+
+  
+  <link href="assets/js/cdn/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/js/cdn/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/js/cdn/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/js/cdn/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <script src="assets/js/cdn/bootstrap/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/cdn/glightbox/assets/js/glightbox.min.js"></script>
+  <script src="assets/js/cdn/p-email-form/validate.js"></script>
+  <script src="assets/js/cdn/purecounter/purecounter.js"></script>
+  <script src="assets/js/cdn/swiper/swiper-bundle.min.js"></script>
+
+   
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

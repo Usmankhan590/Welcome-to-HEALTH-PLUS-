@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Health Plus</title>
+
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+ 
+  <style>
+    
+    body{
+        background-image: url("assets/img/home.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   .welcome-text{
+    margin-top: 15%;
+   }
+   .logo{
+    font-family: "Poppins", sans-serif;
+   }
+.logo span{
+    color: #2c4964;
+    font-family: "Raleway", sans-serif;
+}
+.welcome1{
+    font-family: "Open Sans", sans-serif;
+}
+  </style>
+</head>
+<body>
+
+    <div class="container welcome-text">
+        <h1 class="text-center welcome1">Welcome to</h1>
+        
+      <h1 class="logo text-center">H<span>EALTH</span> P<span>LUS</span> <i class='fas fa-hospital-alt' style='font-size:30px'></i></h1>
+      
+<center>
+      <input type="text" class="form-control text-center" style="width: 300px;" id="Unames" placeholder="Enter Your Name" required >
+
+    <input type="submit" class="btn btn-primary" value="Enter to Health Plus" style="margin-top:2px ;" onclick="funct()">
+  </center>
+    </div>
+    
+    <script>
+      function  funct(){
+          var here =  document.getElementById("Unames").value 
+          localStorage.setItem("Uname",here);
+    
+
+          if( here != "" ){
+    
+            location.replace("Home.html")
+    
+        }
+        else{
+            location.href="Index.html"
+        }
+
+    
+        // location.replace("Home.html")
+        }
+        
+        </script>
+    
+  <link href="assets/js/cdn/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+</body>
+</html>
